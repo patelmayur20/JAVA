@@ -1,0 +1,36 @@
+abstract class abs1
+{
+	 void meth1()
+	 {
+		 System.out.println("meth1");
+	 }
+	 abstract void meth2();
+}
+class abs2 extends abs1
+{
+	void meth2() {
+	System.out.println("meth2");
+	}
+	
+}
+class abs3 extends abs1
+{
+	void meth2()
+	{
+		System.out.println("meth2 is defined in abs3");
+	}
+}
+public class Abstract {
+	
+	public static void main(String[] args) {
+	abs2 a=new abs2();
+    a.meth1();
+    a.meth2();
+    abs3 a1=new abs3();
+     a1.meth1();
+     a1.meth2();
+  
+	}
+}
+
+
